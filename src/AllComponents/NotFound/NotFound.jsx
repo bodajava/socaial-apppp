@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import avataer from "../../assets/it.PNG"; 
+import avataer from "../../assets/it.png"; 
 import styles from "./NotFound.module.css"; // استدعاء ملف CSS
 
 export default function NotFound() {
