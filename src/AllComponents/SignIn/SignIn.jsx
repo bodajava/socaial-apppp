@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./SignIn.module.css"; 
 import { Link, useNavigate } from "react-router-dom";
 import { Toaster, toast } from "sonner";
-import avataer from "../../assets/it.PNG";
+import avataer from "../../assets/it.png";
 import { useForm } from "react-hook-form";
 import z from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
