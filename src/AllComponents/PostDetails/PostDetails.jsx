@@ -28,7 +28,7 @@ export default function PostDetails() {
   return (
     <div className="flex">
       {/* Sidebar */}
-      <div className="w-64 bg-white shadow h-screen sticky top-0 p-4">
+      <div className=" h-screen sticky top-0">
         <Navbar />
       </div>
 

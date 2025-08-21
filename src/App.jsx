@@ -9,10 +9,12 @@ import ProtectedRoute from "./AllComponents/ProtectedRoute/ProtectedRoute";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import PostContextProvider from './context/PostContext';  
 import PostDetails from "./AllComponents/PostDetails/PostDetails";
+import Setting from './AllComponents/Setting/Setting';
+
 
 // React Query
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import Setting from './AllComponents/Setting/Setting';
+import CreatPost from "./AllComponents/CreatPost/CreatPost";
 
 function App() {
   // نعمل client جديد للـ react-query
@@ -27,7 +29,9 @@ function App() {
         { path: "Signin", element: <SignIn /> },
         { path: "Home", element: <ProtectedRoute><Home /></ProtectedRoute> },
         { path: "Me", element: <ProtectedRoute><Me /></ProtectedRoute> },
-        { path: "Me", element: <ProtectedRoute><Setting /></ProtectedRoute> },
+        { path: "Setting", element: <ProtectedRoute><Setting /></ProtectedRoute> }, // مسار فريد
+                { path: "CreatPost", element: <ProtectedRoute><CreatPost /></ProtectedRoute> }, // مسار فريد
+
         { path: "PostDetails/:id", element: <ProtectedRoute><PostDetails /></ProtectedRoute> },
         { path: "Regester", element: <Regester /> },
         { path: "*", element: <NotFound /> },
